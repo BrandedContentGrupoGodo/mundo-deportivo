@@ -12,19 +12,20 @@
 <body class="font-sans antialiased scroll-smooth">
 
     <!-- Menu -->
-    <nav id="menu" class="fixed w-full z-10 top-0 drop-shadow-2xl sm:flex-nowrap"> 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 justify-center">
-            <div class="flex justify-around p-4 uppercase">
-                <a href="#section1" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0">Presentación</a>
-                <a href="#section2" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0">Plan de estudios</a>
-                <a href="#section3" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0">Profesorado</a>
-                <a href="#section4" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0">Requisitos</a>
-                <a href="#section5" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0">Metodología</a>
-                <a href="#section6" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0">Titulación</a>
-                <a href="#section7" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0">Precios</a>
-            </div>
+<nav id="menu" class="fixed w-full z-10 top-0 drop-shadow-2xl sm:flex-nowrap">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 justify-center">
+        <div class="flex justify-around p-4 uppercase">
+            <a href="#section1" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0" data-section="section1">Presentación</a>
+            <a href="#section2" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0" data-section="section2">Metodología</a>
+            <a href="#section3" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0" data-section="section3">Plan de estudios</a>
+            <a href="#section4" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0" data-section="section4">Profesorado</a>
+            <a href="#section5" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0" data-section="section5">Requisitos</a>
+            <a href="#section6" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0" data-section="section6">Estructura</a>
+            <a href="#section7" class="menu-item text-sm font-bold text-gray-700 hover:text-gray-900 pr-4 md:pr-0" data-section="section7">Titulación y Precios</a>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- Sección 1 -->
     <section id="section1" class="section-padding min-h-screen py-12 bg-black">
@@ -69,9 +70,7 @@
             </div>
         </div>
     </section>
-
-    <!-- Sección 2 -->
-    <section id="section2" class="relative min-h-screen bg-cover bg-center grid" style="background-image: url('https://images.unsplash.com/photo-1565308674684-1d8c0b4433d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <section class="relative min-h-screen bg-cover bg-center grid" style="background-image: url('https://images.unsplash.com/photo-1565308674684-1d8c0b4433d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative flex items-center justify-center flex-col md:flex-row h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-8">
             <div class="text-white pb-4">
@@ -85,8 +84,8 @@
         </div>
     </section>
 
-    <!-- Sección 3 -->
-    <section id="section3" class="min-h-full bg-gray-100 py-12">
+    <!-- Sección 2 -->
+    <section id="section2" class="min-h-full bg-gray-100 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
             <h2 class="text-3xl font-extrabold mb-12 max-w-screen-md uppercase">POR QUÉ ELEGIR EL MÁSTER EN PERIODISMO DEPORTIVO DE MUNDO DEPORTIVO</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -153,8 +152,8 @@
             </div>
         </div>
     </section>
-    <!-- Sección 4 -->
-    <section id="section4" class="min-h-full section-padding py-8">
+    <!-- Sección 3 -->
+    <section id="section3" class="min-h-full section-padding py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-extrabold mb-12 max-w-screen-md uppercase">¿QUÉ APRENDERÁS EN EL MÁSTER EN PERIODISMO DEPORTIVO DE MUNDO DEPORTIVO?</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -268,8 +267,8 @@
             </div>
         </div>
     </section>
-    <!-- Sección 5 -->
-    <section id="section5" class="min-h-full py-12">
+    <!-- Sección 4 -->
+    <section id="section4" class="min-h-full py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-extrabold mb-12 max-w-screen-md uppercase">PROFESORADO DEL MÁSTER EN PERIODISMO DEPORTIVO DE MUNDO DEPORTIVO</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -419,17 +418,17 @@
             </div>
         </div>
     </section>
-    <!-- Sección 6 -->
-    <section id="section6" class="py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Sección 5 -->
+    <section id="section5" class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-4">
             <h2 class="text-3xl font-extrabold mb-8 max-w-screen-md uppercase">¿QUÉ NECESITAS PARA ESTUDIAR ESTE MÁSTER EN PERIODISMO DEPORTIVO DE MUNDO DEPORTIVO?</h2>
-            <p class="bg-white p-10 rounded-lg border-dotted border-4 border-red-500 mb-8">
+            <p class="bg-white p-10 rounded-lg border-dotted border-4 border-red-500 mb-8 mt-8">
                 Para cursar el programa es necesario tener una titulación universitaria previa. En caso de no tener una titulación universitaria se puede acceder al programa a través del reconocimiento de la siguiente experiencia profesional: un mínimo de un año de experiencia en el ámbito del periodismo y la comunicación, desarrollando tareas roles como de editor y gestor de contenidos online, responsable de la comunicación institucional o corporativa, content manager o responsable de branded content, gestor de proyectos de comunicación o similares.
             </p>
         </div>
     </section>
-    <!-- Sección 7 -->
-    <section id="section7" class="py-12 bg-gray-100">
+    <!-- Sección 6 -->
+    <section id="section6" class="py-12 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-extrabold mb-8 max-w-screen-md uppercase">CÓMO SE ESTRUCTURA EL MÁSTER EN PERIODISMO DEPORTIVO DE MUNDO DEPORTIVO</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -471,8 +470,8 @@
             </div>
         </div>
     </section>
-    <!-- Sección 8 -->
-    <section id="section8" class="py-12 bg-gray-100">
+    <!-- Sección 7 -->
+    <section id="section7" class="py-12 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:gap-8">
                 <!-- Parte izquierda -->
@@ -492,10 +491,15 @@
                     </div>
                 </div>
             </div>
+            <div class="bg-gray-200 p-6 rounded-lg mt-4 flex items-center justify-center">
+                <p class="text-3xl font-bold mr-2">20%</p>
+                <p>de descuento por matrícula anticipada</p>
+            </div>
         </div>
     </section>
-    <!-- Sección 9 -->
-    <section id="section9" class="relative bg-cover bg-center grid" style="background-image: url('assets/img/qualifio.jpg');">
+
+    <!-- Qualifio -->
+    <section class="relative bg-cover bg-center grid" style="background-image: url('assets/img/qualifio.jpg');">
         <div class="absolute inset-0 opacity-50"></div>
         <div class="relative grid items-center justify-center place-content-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-yellow-300 p-8 max-w-screen-md text-center">
@@ -503,12 +507,25 @@
             </div>
             <!-- iframe -->
             <div class="items-center justify-center">
-                <iframe src="https://mundodeportivo.qualifioapp.com/20/91AA90E8-9DCE-4929-B14F-AC04345C094A/v1.cfm?id=91AA90E8-9DCE-4929-B14F-AC04345C094A" id="qualifio1424922" class="qualifio_iframe_tag" width="100%" height="1200" scrolling="auto" frameborder="0" hspace="0" vspace="0" style="overflow-x: hidden;max-width:810px"></iframe>
+                <!-- qualifio -->
+                <div class="iframeQualifio ">
+                    <iframe
+                    src="https://mundodeportivo.qualifioapp.com/20/91AA90E8-9DCE-4929-B14F-AC04345C094A/v1.cfm?id=91AA90E8-9DCE-4929-B14F-AC04345C094A"
+                    id="qualifio1424922"
+                    class="qualifio_iframe_tag"
+                    width="100%"
+                    scrolling="auto"
+                    frameborder="0"
+                    hspace="0"
+                    vspace="0"
+                    style="overflow-x: hidden; max-width: 810px"
+                    ></iframe>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección 10 -->
+    <!-- destacado -->
     <section id="section10" class="bg-yellow-300 w-full py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center text-3xl font-bold">
@@ -517,7 +534,7 @@
         </div>
     </section>
 
-    <!-- Sección 11 -->
+    <!-- formulario -->
     <section id="section11" class="relative min-h-screen bg-cover bg-center grid" style="background-image: url('assets/img/fondo.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative flex items-center justify-center flex-col md:flex-row h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-8">
@@ -535,96 +552,150 @@
 
     <script>
         let lastScrollTop = 0;
-        const menu = document.getElementById("menu");
+const menu = document.getElementById("menu");
+const menuItems = document.querySelectorAll('.menu-item');
 
-        window.addEventListener("scroll", function() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener("scroll", function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollTop > lastScrollTop) {
-                // Scrolling down
-                menu.classList.add("hidden-menu");
-                menu.classList.remove("show-menu");
-            } else {
-                // Scrolling up
-                menu.classList.remove("hidden-menu");
-                menu.classList.add("show-menu");
-            }
-
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-        });
-    </script>
-        <script>
-            const professorData = {
-                1: {
-                    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/xJ_A3vJz7T8?si=Se8LrLLAEOywE6Vr" frameborder="0" allowfullscreen></iframe>',
-                    description: 'Licenciado en Derecho y Periodismo y especialista en comunicación institucional, ha trabajado como consultor en diferentes agencias. El 2011 se convierte en el dircom más joven de nuestro fútbol profesional fichando por el RCD Espanyol, donde durante 8 temporadas lidera la transformación digital del club e impulsa acciones como la campaña Maravillosa Minoría. Es profesor universitario y ejerce de dircom en el ICAB y de senior advisor en Asuntos Públicos en LLYC Barcelona.'
-                },
-                2: {
-                    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/wihUEVvWSLc?si=uisFyaje1zapmrXE" frameborder="0" allowfullscreen></iframe>',
-                    description: 'Licenciado en Periodismo por la UAB (2000). Redactor jefe desde 2015 en Mundo Deportivo (Sección Barça), donde ingresó en 1999. También fue redactor en el Área de Promociones de TVE-Catalunya (2000). Profesor de Periodismo Deportivo desde 2011 en la UIC. Colaborador en Catalunya Ràdio y anteriormente en TVE, Esport3, RAC 1, Cadena SER, Onda Cero, Barça TV y revistas japonesas de fútbol. Autor de seis libros sobre la historia del FC Barcelona editados por Mundo Deportivo y coautor del Gran Diccionario de Jugadores del Barça.'
-                },
-                3: {
-                    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed//ciHA7w4F-WA?si=gOBqPbelL4fMxBVR" frameborder="0" allowfullscreen></iframe>',
-                    description: 'Graduado en periodismo en UIC Barcelona (2018). Me formé en El País, pasé por Sport, conocí el SEO en el sector bancario y escribí sobre finanzas personales en La Vanguardia y Yahoo. En 2019 me incorporé al equipo de audiencias de Mundo Deportivo y desde 2022 lidero el departamento SEO. También escribo sobre las tendencias del momento, sean o no deportivas.'
-                },
-                4: {
-                    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dXG2u0vuwsY?si=ti06kN7OfYmp-phk" frameborder="0" allowfullscreen></iframe>',
-                    description: 'Licenciada en Periodismo por la Universitat Ramon Llull (2008). Directora de branded content del Grupo Godó, con más de 10 años de experiencia en contenido de marca trabajando en agencias y medios de comunicación; Especialista en estrategias y planes de comunicación creativos y tácticos para marcas.'
-                },
-                5: {
-                    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/brI3TORU8dc?si=Dk0zTBf4fsdxbdPL" frameborder="0" allowfullscreen></iframe>',
-                    description: 'Licenciado en Periodismo por la UPF. Empezó en varios medios locales en Terrassa y colaborando con medios nacionales hasta llegar a Mundo Deportivo en 2009, como redactor de polideportivo. Pasó por la edición digital y en 2016 entró en la sección de Barça. Actualmente, es uno de los jefes de la sección y desde 2021 también sigue a la selección española masculina.'
-                },
-                6: {
-                    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZPFDyUXTnfw?si=1kEwloRHbkdhVumm" frameborder="0" allowfullscreen></iframe>',
-                    description: 'Graduado en ‘Comunicación e industrias culturales’ en la UB. Realicé el master de MARCA siendo el primero de mi promoción. Trabajé en varios medios deportivos desde los 18 años hasta que entré en Mundo Deportivo en 2018. Empecé como portadista web y colaborando con las redes sociales. Desde 2022 lidero el equipo de Social Media.'
-                },
-                7: {
-                    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/2VHtIDAqH-M?si=_NgFt-JGy_T6hOGH" frameborder="0" allowfullscreen></iframe>',
-                    description: 'Licenciado en Derecho por la UPF, se incorporó a Mundo Deportivo en 2012. Empezó en el equipo digital para posteriormente dirigir el equipo de portadistas. Actualmente es uno de los responsables editoriales, coordinando también las redes sociales y los verticales del diario.'
-                },
-                8: {
-                    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/-YfrplS2VKM?si=Zwg5VjJ32gnCwEhe" frameborder="0" allowfullscreen></iframe>',
-                    description: 'Licenciado en Administración y dirección de empresas en la UB, especialista en marketing y publicidad digital. 20 años de experiencia en Grupo Godó trabajando en el departamento de Marketing con amplia experiencia de los diferentes medios del grupo: Mundo Deportivo, La Vanguardia, Rac1 y 8tv. Actualmente soy el responsable del producto digital en Mundo Deportivo.'
-                },
-                9: {
-                    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Yxn07vHcCFw?si=HWrSQIDfdqjpMhw_" frameborder="0" allowfullscreen></iframe>',
-                    description: 'Aleix Parisé Milian, licenciado en Periodismo en la UAB, empezó en Radio Sabadell en 2002 donde ejerció de redactor de deportes durante 6 años. Después estuvo unos meses en 2008 en Onda Cero en la redacción de deportes de Cataluña y en 2009 fichó por RAC1. Actualmente lleva 4 años siendo el Director y presentador del programa nocturno "Tu Diras" que es líder de su franja horaria en Cataluña.'
-                },
-            };
-    
-            // Función para mostrar el contenido del profesor seleccionado
-function showProfessorContent(professorId) {
-    // Eliminar la clase 'selected-professor' de todos los elementos de la lista
-    const professorItems = document.querySelectorAll('.professor-item');
-    professorItems.forEach(item => {
-        item.classList.remove('selected-professor');
-    });
-
-    // Agregar la clase 'selected-professor' al elemento seleccionado
-    const selectedProfessor = document.querySelector(`#professorList .professor-item:nth-child(${professorId})`);
-    selectedProfessor.classList.add('selected-professor');
-
-    // Mostrar el contenido del profesor seleccionado
-    const content = professorData[professorId];
-    document.getElementById('professorVideo').innerHTML = content.video;
-    document.getElementById('professorDescription').innerText = content.description;
-}
-
-// Cargar los profesores en la lista al cargar la página
-document.addEventListener('DOMContentLoaded', function() {
-    const professorList = document.getElementById('professorList');
-    const professorItems = professorList.querySelectorAll('.professor-item');
-    const totalProfessors = professorItems.length;
-
-    // Ocultar los elementos después del noveno
-    for (let i = 9; i < totalProfessors; i++) {
-        professorItems[i].style.display = 'none';
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        if (!menu.matches(':hover')) {
+            menu.classList.add("hidden-menu");
+            menu.classList.remove("show-menu");
+        }
+    } else {
+        // Scrolling up
+        menu.classList.remove("hidden-menu");
+        menu.classList.add("show-menu");
     }
 
-    // Seleccionar el primer profesor al cargar la página
-    showProfessorContent(1);
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+
+    // Highlight the current section link
+    let currentSection = "";
+    menuItems.forEach(item => {
+        const section = document.querySelector(item.getAttribute('href'));
+        if (section.offsetTop <= scrollTop && section.offsetTop + section.offsetHeight > scrollTop) {
+            currentSection = item.getAttribute('data-section');
+        }
+    });
+
+    menuItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('data-section') === currentSection) {
+            item.classList.add('active');
+        }
+    });
 });
-        </script>
+
+// Make menu visible on mouse over
+menu.addEventListener('mouseenter', function() {
+    menu.classList.remove('hidden-menu');
+    menu.classList.add('show-menu');
+});
+
+menu.addEventListener('mouseleave', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        menu.classList.add('hidden-menu');
+        menu.classList.remove('show-menu');
+    }
+});
+
+// Prevent hiding menu on click
+menuItems.forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+
+        // Scroll to the section smoothly
+        const targetId = item.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+        });
+
+        menu.classList.remove('hidden-menu');
+        menu.classList.add('show-menu');
+    });
+});
+
+
+    </script>
+    <script>
+        const professorData = {
+            1: {
+                video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/xJ_A3vJz7T8?si=Se8LrLLAEOywE6Vr" frameborder="0" allowfullscreen></iframe>',
+                description: 'Licenciado en Derecho y Periodismo y especialista en comunicación institucional, ha trabajado como consultor en diferentes agencias. El 2011 se convierte en el dircom más joven de nuestro fútbol profesional fichando por el RCD Espanyol, donde durante 8 temporadas lidera la transformación digital del club e impulsa acciones como la campaña Maravillosa Minoría. Es profesor universitario y ejerce de dircom en el ICAB y de senior advisor en Asuntos Públicos en LLYC Barcelona.'
+            },
+            2: {
+                video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/wihUEVvWSLc?si=uisFyaje1zapmrXE" frameborder="0" allowfullscreen></iframe>',
+                description: 'Licenciado en Periodismo por la UAB (2000). Redactor jefe desde 2015 en Mundo Deportivo (Sección Barça), donde ingresó en 1999. También fue redactor en el Área de Promociones de TVE-Catalunya (2000). Profesor de Periodismo Deportivo desde 2011 en la UIC. Colaborador en Catalunya Ràdio y anteriormente en TVE, Esport3, RAC 1, Cadena SER, Onda Cero, Barça TV y revistas japonesas de fútbol. Autor de seis libros sobre la historia del FC Barcelona editados por Mundo Deportivo y coautor del Gran Diccionario de Jugadores del Barça.'
+            },
+            3: {
+                video: '<iframe width="560" height="315" src="https://www.youtube.com/embed//ciHA7w4F-WA?si=gOBqPbelL4fMxBVR" frameborder="0" allowfullscreen></iframe>',
+                description: 'Graduado en periodismo en UIC Barcelona (2018). Me formé en El País, pasé por Sport, conocí el SEO en el sector bancario y escribí sobre finanzas personales en La Vanguardia y Yahoo. En 2019 me incorporé al equipo de audiencias de Mundo Deportivo y desde 2022 lidero el departamento SEO. También escribo sobre las tendencias del momento, sean o no deportivas.'
+            },
+            4: {
+                video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dXG2u0vuwsY?si=ti06kN7OfYmp-phk" frameborder="0" allowfullscreen></iframe>',
+                description: 'Licenciada en Periodismo por la Universitat Ramon Llull (2008). Directora de branded content del Grupo Godó, con más de 10 años de experiencia en contenido de marca trabajando en agencias y medios de comunicación; Especialista en estrategias y planes de comunicación creativos y tácticos para marcas.'
+            },
+            5: {
+                video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/brI3TORU8dc?si=Dk0zTBf4fsdxbdPL" frameborder="0" allowfullscreen></iframe>',
+                description: 'Licenciado en Periodismo por la UPF. Empezó en varios medios locales en Terrassa y colaborando con medios nacionales hasta llegar a Mundo Deportivo en 2009, como redactor de polideportivo. Pasó por la edición digital y en 2016 entró en la sección de Barça. Actualmente, es uno de los jefes de la sección y desde 2021 también sigue a la selección española masculina.'
+            },
+            6: {
+                video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/ZPFDyUXTnfw?si=1kEwloRHbkdhVumm" frameborder="0" allowfullscreen></iframe>',
+                description: 'Graduado en ‘Comunicación e industrias culturales’ en la UB. Realicé el master de MARCA siendo el primero de mi promoción. Trabajé en varios medios deportivos desde los 18 años hasta que entré en Mundo Deportivo en 2018. Empecé como portadista web y colaborando con las redes sociales. Desde 2022 lidero el equipo de Social Media.'
+            },
+            7: {
+                video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/2VHtIDAqH-M?si=_NgFt-JGy_T6hOGH" frameborder="0" allowfullscreen></iframe>',
+                description: 'Licenciado en Derecho por la UPF, se incorporó a Mundo Deportivo en 2012. Empezó en el equipo digital para posteriormente dirigir el equipo de portadistas. Actualmente es uno de los responsables editoriales, coordinando también las redes sociales y los verticales del diario.'
+            },
+            8: {
+                video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/-YfrplS2VKM?si=Zwg5VjJ32gnCwEhe" frameborder="0" allowfullscreen></iframe>',
+                description: 'Licenciado en Administración y dirección de empresas en la UB, especialista en marketing y publicidad digital. 20 años de experiencia en Grupo Godó trabajando en el departamento de Marketing con amplia experiencia de los diferentes medios del grupo: Mundo Deportivo, La Vanguardia, Rac1 y 8tv. Actualmente soy el responsable del producto digital en Mundo Deportivo.'
+            },
+            9: {
+                video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Yxn07vHcCFw?si=HWrSQIDfdqjpMhw_" frameborder="0" allowfullscreen></iframe>',
+                description: 'Aleix Parisé Milian, licenciado en Periodismo en la UAB, empezó en Radio Sabadell en 2002 donde ejerció de redactor de deportes durante 6 años. Después estuvo unos meses en 2008 en Onda Cero en la redacción de deportes de Cataluña y en 2009 fichó por RAC1. Actualmente lleva 4 años siendo el Director y presentador del programa nocturno "Tu Diras" que es líder de su franja horaria en Cataluña.'
+            },
+        };
+
+        // Función para mostrar el contenido del profesor seleccionado
+        function showProfessorContent(professorId) {
+            // Eliminar la clase 'selected-professor' de todos los elementos de la lista
+            const professorItems = document.querySelectorAll('.professor-item');
+            professorItems.forEach(item => {
+                item.classList.remove('selected-professor');
+            });
+
+            // Agregar la clase 'selected-professor' al elemento seleccionado
+            const selectedProfessor = document.querySelector(`#professorList .professor-item:nth-child(${professorId})`);
+            selectedProfessor.classList.add('selected-professor');
+
+            // Mostrar el contenido del profesor seleccionado
+            const content = professorData[professorId];
+            document.getElementById('professorVideo').innerHTML = content.video;
+            document.getElementById('professorDescription').innerText = content.description;
+        }
+
+        // Cargar los profesores en la lista al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            const professorList = document.getElementById('professorList');
+            const professorItems = professorList.querySelectorAll('.professor-item');
+            const totalProfessors = professorItems.length;
+
+            // Ocultar los elementos después del noveno
+            for (let i = 9; i < totalProfessors; i++) {
+                professorItems[i].style.display = 'none';
+            }
+
+            // Seleccionar el primer profesor al cargar la página
+            showProfessorContent(1);
+        });
+    </script>
 </body>
 </html>
