@@ -20,9 +20,9 @@ body {
     overflow-x: auto;
     white-space: nowrap;
     z-index: 10;
-    position: absolute;
+    position: absolute; /* Ensure the initial position is absolute */
+    width: 100%; /* Ensure the menu takes full width */
 }
-
 .menu-item {
     display: inline-block;
     position: relative;
