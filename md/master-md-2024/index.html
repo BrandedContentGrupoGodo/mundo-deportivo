@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://brandedcontentgrupogodo.github.io/mundo-deportivo/md/master-md-2024/assets/css/main.css">
 </head>
 <body class="font-sans antialiased scroll-smooth">
 
@@ -383,7 +383,7 @@
                 <div class="citas-bg rounded-lg w-full">
                     <div class="cita-profesor pt-4 pr-4 flex items-center">
                         <div class="w-1/2 mr-4">
-                            <img src="assets/img/profe-1.png" alt="Santi Nolla" class="w-full">
+                            <img src="https://brandedcontentgrupogodo.github.io/mundo-deportivo/md/master-md-2024/assets/img/profe-1.png" alt="Santi Nolla" class="w-full">
                         </div>
                         <div class="w-1/2">
                             <p class="font-bold mb-2">“El máster que te permitirá trabajar en periodismo deportivo”</p>
@@ -395,7 +395,7 @@
                 <div class="citas-bg rounded-lg w-full">
                     <div class="cita-profesor pt-4 pr-4 flex items-center">
                         <div class="w-1/2 mr-4">
-                            <img src="assets/img/profe-2.png" alt="Sergi Solé" class="w-full">
+                            <img src="https://brandedcontentgrupogodo.github.io/mundo-deportivo/md/master-md-2024/assets/img/profe-2.png" alt="Sergi Solé" class="w-full">
                         </div>
                         <div class="w-1/2">
                             <p class="font-bold mb-2">“Una inmersión para convertir tu pasión en profesión”</p>
@@ -407,7 +407,7 @@
                 <div class="citas-bg rounded-lg w-full">
                     <div class="cita-profesor pt-4 pr-4 flex items-center">
                         <div class="w-1/2 mr-4">
-                            <img src="assets/img/profe-3.png" alt="Rosa Varona" class="w-full">
+                            <img src="https://brandedcontentgrupogodo.github.io/mundo-deportivo/md/master-md-2024/assets/img/profe-3.png" alt="Rosa Varona" class="w-full">
                         </div>
                         <div class="w-1/2">
                             <p class="font-bold mb-2">“Tiene en cuenta las últimas tendencias para que brilles en cualquier área de la comunicación deportiva”</p>
@@ -499,7 +499,7 @@
     </section>
 
     <!-- Qualifio -->
-    <section class="relative bg-cover bg-center grid" style="background-image: url('assets/img/qualifio.jpg');">
+    <section class="relative bg-cover bg-center grid" style="background-image: url('https://brandedcontentgrupogodo.github.io/mundo-deportivo/md/master-md-2024/assets/img/qualifio.jpg');">
         <div class="absolute inset-0 opacity-50"></div>
         <div class="relative grid items-center justify-center place-content-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-yellow-300 p-8 max-w-screen-md text-center">
@@ -507,20 +507,19 @@
             </div>
             <!-- iframe -->
             <div class="items-center justify-center">
-                <!-- qualifio -->
-                <div class="iframeQualifio ">
-                    <iframe
-                    src="https://mundodeportivo.qualifioapp.com/20/91AA90E8-9DCE-4929-B14F-AC04345C094A/v1.cfm?id=91AA90E8-9DCE-4929-B14F-AC04345C094A"
-                    id="qualifio1424922"
-                    class="qualifio_iframe_tag"
-                    width="100%"
-                    scrolling="auto"
-                    frameborder="0"
-                    hspace="0"
-                    vspace="0"
-                    style="overflow-x: hidden; max-width: 810px"
-                    ></iframe>
-                </div>
+          <div class="iframeQualifio wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+            <iframe
+              src="https://lavanguardia.qualifioapp.com/20/91AA90E8-9DCE-4929-B14F-AC04345C094A/v1.cfm?id=91AA90E8-9DCE-4929-B14F-AC04345C094A"
+              id="qualifio1424922"
+              class="qualifio_iframe_tag"
+              width="100%"
+              scrolling="auto"
+              frameborder="0"
+              hspace="0"
+              vspace="0"
+              style="overflow-x: hidden; max-width: 810px"
+            ></iframe>
+          </div>
             </div>
         </div>
     </section>
@@ -535,7 +534,7 @@
     </section>
 
     <!-- formulario -->
-    <section id="section11" class="relative min-h-screen bg-cover bg-center grid" style="background-image: url('assets/img/fondo.jpg');">
+    <section id="section11" class="relative min-h-screen bg-cover bg-center grid" style="background-image: url('https://brandedcontentgrupogodo.github.io/mundo-deportivo/md/master-md-2024/assets/img/fondo.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative flex items-center justify-center flex-col md:flex-row h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-8">
             <div class="text-white pb-4">
@@ -549,81 +548,115 @@
             </div>
         </div>
     </section>
-
     <script>
-        let lastScrollTop = 0;
-const menu = document.getElementById("menu");
-const menuItems = document.querySelectorAll('.menu-item');
-
-window.addEventListener("scroll", function() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-        // Scrolling down
-        if (!menu.matches(':hover')) {
-            menu.classList.add("hidden-menu");
-            menu.classList.remove("show-menu");
-        }
-    } else {
-        // Scrolling up
-        menu.classList.remove("hidden-menu");
-        menu.classList.add("show-menu");
-    }
-
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-
-    // Highlight the current section link
-    let currentSection = "";
-    menuItems.forEach(item => {
-        const section = document.querySelector(item.getAttribute('href'));
-        if (section.offsetTop <= scrollTop && section.offsetTop + section.offsetHeight > scrollTop) {
-            currentSection = item.getAttribute('data-section');
-        }
-    });
-
-    menuItems.forEach(item => {
-        item.classList.remove('active');
-        if (item.getAttribute('data-section') === currentSection) {
-            item.classList.add('active');
-        }
-    });
-});
-
-// Make menu visible on mouse over
-menu.addEventListener('mouseenter', function() {
-    menu.classList.remove('hidden-menu');
-    menu.classList.add('show-menu');
-});
-
-menu.addEventListener('mouseleave', function() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        menu.classList.add('hidden-menu');
-        menu.classList.remove('show-menu');
-    }
-});
-
-// Prevent hiding menu on click
-menuItems.forEach(item => {
-    item.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-
-        // Scroll to the section smoothly
-        const targetId = item.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-
-        window.scrollTo({
-            top: targetSection.offsetTop,
-            behavior: 'smooth'
+        document.addEventListener("DOMContentLoaded", function() {
+            const mainHeader = document.querySelector(".main-header");
+            const stickyNoJump = document.querySelector(".sticky-no-jump");
+            const superHeaderFullContainer = document.querySelector(".super-header-full-container");
+            const menu = document.getElementById("menu");
+    
+            let lastScrollTop = 0;
+            const menuItems = document.querySelectorAll('.menu-item');
+    
+            // Function to adjust menu position
+            function adjustMenuPosition() {
+                const mainHeaderHeight = mainHeader ? mainHeader.offsetHeight : 0;
+                const stickyNoJumpHeight = stickyNoJump ? stickyNoJump.offsetHeight : 0;
+                const superHeaderFullContainerHeight = superHeaderFullContainer ? superHeaderFullContainer.offsetHeight : 0;
+    
+                // Calculate initial position to avoid space at the top
+                const initialTop = stickyNoJumpHeight + superHeaderFullContainerHeight;
+                menu.style.top = initialTop + 'px';
+            }
+    
+            // Initial adjustment
+            adjustMenuPosition();
+    
+            window.addEventListener("scroll", function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const mainHeaderHeight = mainHeader ? mainHeader.offsetHeight : 0;
+    
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    if (!menu.matches(':hover')) {
+                        menu.classList.add("hidden-menu");
+                        menu.classList.remove("show-menu");
+                    }
+                } else {
+                    // Scrolling up
+                    menu.classList.remove("hidden-menu");
+                    menu.classList.add("show-menu");
+                }
+    
+                if (scrollTop > 0) {
+                    menu.style.position = 'fixed';
+                    menu.style.top = mainHeaderHeight + 'px';
+                } else {
+                    menu.style.position = 'absolute';
+                    adjustMenuPosition();
+                }
+    
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+    
+                // Highlight the current section link
+                let currentSection = "";
+                menuItems.forEach(item => {
+                    const section = document.querySelector(item.getAttribute('href'));
+                    if (section.offsetTop <= scrollTop && section.offsetTop + section.offsetHeight > scrollTop) {
+                        currentSection = item.getAttribute('data-section');
+                    }
+                });
+    
+                menuItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('data-section') === currentSection) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+    
+            // Make menu visible on mouse over
+            menu.addEventListener('mouseenter', function() {
+                menu.classList.remove("hidden-menu");
+                menu.classList.add("show-menu");
+            });
+    
+            menu.addEventListener('mouseleave', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    menu.classList.add("hidden-menu");
+                    menu.classList.remove("show-menu");
+                }
+            });
+    
+            // Prevent hiding menu on click
+            menuItems.forEach(item => {
+                item.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent the default link behavior
+    
+                    // Scroll to the section smoothly
+                    const targetId = item.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+    
+                    window.scrollTo({
+                        top: targetSection.offsetTop - mainHeader.offsetHeight,
+                        behavior: 'smooth'
+                    });
+    
+                    menu.classList.remove("hidden-menu");
+                    menu.classList.add("show-menu");
+                });
+            });
+    
+            // Adjust the menu position on window resize
+            window.addEventListener('resize', adjustMenuPosition);
+    
+            // Ensure the menu is correctly positioned initially
+            window.addEventListener('load', adjustMenuPosition);
+            setTimeout(adjustMenuPosition, 100);
         });
-
-        menu.classList.remove('hidden-menu');
-        menu.classList.add('show-menu');
-    });
-});
-
-
     </script>
+    
     <script>
         const professorData = {
             1: {
