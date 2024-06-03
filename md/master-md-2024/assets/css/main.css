@@ -24,6 +24,7 @@ body {
     z-index: 1000000;
     position: absolute; /* Ensure the initial position is absolute */
     width: 100%; /* Ensure the menu takes full width */
+    top: -40px; /* Initial position 40px above the top */
 }
 
 .menu-item {
@@ -66,6 +67,7 @@ body {
         right: -10px; /* Ajusta la posición del separador en móviles */
     }
 }
+
 
 .section-padding {
     padding-top: 4rem;
