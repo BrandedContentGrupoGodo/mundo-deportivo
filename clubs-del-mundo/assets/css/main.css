@@ -88,6 +88,7 @@ body {
     min-height: 100vh;
     width: 100%;
     padding-top: 5rem !important;
+    margin-top: 2.5rem;
 }
 
 #section5 {
@@ -236,3 +237,4 @@ body {
     box-shadow: none;
 
   }
+
