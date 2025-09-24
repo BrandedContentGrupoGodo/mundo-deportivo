@@ -81,7 +81,7 @@ body {
 /* sección 1 - inicio */
 #section1 {
     margin-top: 0.5rem;
-    background-image: url('../img/fondo.png');
+    background-image: url('https://brandedcontentgrupogodo.github.io/mundo-deportivo/clubs-del-mundo/assets/img/fondo.png');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ body {
 
 #section5 {
     margin-top: 0.5rem;
-    background-image: url('../img/fondo-2.jpg');
+    background-image: url('https://brandedcontentgrupogodo.github.io/mundo-deportivo/clubs-del-mundo/assets/img/fondo-2.jpg');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -234,4 +234,5 @@ body {
   .article-default a:hover {
     text-decoration: none;
     box-shadow: none;
+
   }
