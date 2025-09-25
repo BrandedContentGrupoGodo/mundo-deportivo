@@ -201,7 +201,7 @@ body {
         min-width: 0;
     }
      .qualifio_iframe_wrapper:last-of-type iframe {
-    height: 80vh !important;
+    height: 80vh !important; 
     width: 80vw !important;
 }
 }
@@ -245,5 +245,6 @@ body {
     box-shadow: none;
 
   }
+
 
 
