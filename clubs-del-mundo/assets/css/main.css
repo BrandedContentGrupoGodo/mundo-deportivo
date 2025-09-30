@@ -109,8 +109,11 @@ body {
     }
 }
 @media (max-width: 490px) {
+    #section1 div:first-of-type {
+    padding-top: 1rem;
+    }
     #section1 {
-        padding-top: 7rem !important;
+        padding-top: 8rem !important;
     }
 }
 
@@ -255,6 +258,7 @@ body {
     box-shadow: none;
 
   }
+
 
 
 
