@@ -209,8 +209,8 @@ body {
         min-width: 0;
     }
      .qualifio_iframe_wrapper:last-of-type iframe {
-    height: 80vh !important; 
-    width: 80vw !important;
+    height: 95vh !important; 
+    width: 85vw !important;
 }
 }
 
@@ -229,7 +229,8 @@ body {
 }
 @media (max-width: 390px) {
     .qualifio_iframe_wrapper:last-of-type iframe {
-        height: 95vh !important;
+        height: 100vh !important;
+        width: 85vw !important;
     }
 }
 
@@ -258,6 +259,7 @@ body {
     box-shadow: none;
 
   }
+
 
 
 
