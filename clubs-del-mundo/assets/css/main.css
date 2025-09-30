@@ -108,6 +108,11 @@ body {
         height: auto !important;
     }
 }
+@media (max-width: 490px) {
+    #section1 {
+        padding-top: 7rem !important;
+    }
+}
 
 .section-padding {
     padding-top: 4rem;
@@ -219,6 +224,11 @@ body {
         line-height: 56px;
     }
 }
+@media (max-width: 390px) {
+    .qualifio_iframe_wrapper:last-of-type iframe {
+        height: 95vh !important;
+    }
+}
 
 /* estilos para que en LV se muestre el contenido sin margenes */
 .wallpaper-inverted-ad{
@@ -245,6 +255,7 @@ body {
     box-shadow: none;
 
   }
+
 
 
 
