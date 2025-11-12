@@ -108,6 +108,7 @@ body {
         height: auto !important;
     }
 }
+
 @media (max-width: 490px) {
     #section1 div:first-of-type {
     padding-top: 1rem;
@@ -208,9 +209,9 @@ body {
         max-width: 100vw;
         min-width: 0;
     }
-     .qualifio_iframe_wrapper:last-of-type iframe {
-    height: 95vh !important; 
-    width: 85vw !important;
+    .qualifio_iframe_wrapper:last-of-type iframe {
+    height: 80vh !important;
+    width: 80vw !important;
 }
 }
 
@@ -230,7 +231,6 @@ body {
 @media (max-width: 390px) {
     .qualifio_iframe_wrapper:last-of-type iframe {
         height: 100vh !important;
-        width: 85vw !important;
     }
 }
 
@@ -257,11 +257,4 @@ body {
   .article-default a:hover {
     text-decoration: none;
     box-shadow: none;
-
   }
-
-
-
-
-
-
