@@ -14,6 +14,46 @@
 body {
     font-family: var(--font-family);
 }
+
+/* Accessibility: Skip link and focus states */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.sr-only:focus {
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 0.75rem 1.5rem;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000001;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Focus states for better keyboard navigation */
+.menu-item:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--btn-bg-color);
+    outline-offset: 2px;
+}
 #menu {
     margin-top: 0;
     padding-top: 0;
@@ -108,12 +148,168 @@ body {
         height: auto !important;
     }
 }
+
 @media (max-width: 490px) {
     #section1 div:first-of-type {
-    padding-top: 1rem;
+    padding-top: 0rem;
+    margin-top: 0.7rem;
     }
     #section1 {
-        padding-top: 8rem !important;
+        padding-top: 4rem !important;
+    }
+}
+
+/* Ajustes del h1 en mobile */
+@media (max-width: 640px) {
+    #section1-heading {
+        font-size: 1.75rem !important; /* Más pequeño en mobile (28px) */
+        line-height: 1.2 !important; /* Interlineado reducido */
+        margin-top: 0.5rem !important;
+    }
+    
+    /* Compensar los párrafos debajo del h1 */
+    #section1 .text-white p:first-of-type {
+        font-size: 1.125rem !important; /* text-lg en mobile */
+        margin-top: 0.75rem !important; /* Reducir margen superior */
+        margin-bottom: 0.5rem !important;
+    }
+    
+    #section1 .text-white p:last-of-type {
+        font-size: 1.2rem !important; /* text-sm en mobile */
+        padding: 0.5rem !important; /* Reducir padding */
+        margin-top: 0 !important;
+    }
+}
+
+/* Ajustes de títulos y textos en mobile - proporcionales al h1 */
+@media (max-width: 640px) {
+    /* Todos los h2 - reducir proporcionalmente */
+    h2 {
+        font-size: 1.5rem !important; /* 24px - proporcional al h1 de 28px */
+        line-height: 1.3 !important; /* Interlineado ajustado */
+    }
+    
+    /* Títulos específicos de secciones */
+    #section2-heading,
+    #section3-heading,
+    #section4-heading,
+    #section5-heading,
+    #section6-heading,
+    #section7-heading {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 1rem !important; /* Reducir margen inferior */
+    }
+    
+    /* Texto de la sección 2 - párrafo destacado */
+    #section2 .font-bold.uppercase {
+        font-size: 1rem !important; /* 16px - proporcional */
+        line-height: 1.4 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Texto normal de sección 2 */
+    #section2 .text-base {
+        font-size: 0.875rem !important; /* 14px */
+        line-height: 1.5 !important;
+    }
+    
+    /* Texto de beneficios (sección 3) */
+    #section3 .text-base {
+        font-size: 0.875rem !important; /* 14px */
+        line-height: 1.5 !important;
+    }
+    
+    /* Texto destacado en caja amarilla (sección 4) */
+    #section4 .bg-yellow-300 p {
+        font-size: 0.9375rem !important; /* 15px */
+        line-height: 1.4 !important;
+        padding: 1rem !important; /* Reducir padding */
+    }
+    
+    /* Texto de pasos (sección 5) */
+    #section5 .text-yellow-300 {
+        font-size: 0.875rem !important; /* 14px */
+        line-height: 1.5 !important;
+    }
+    
+    /* Texto de sección 6 */
+    #section6-heading {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Texto de sección 7 */
+    #section7-heading {
+        font-size: 1.25rem !important; /* 20px - un poco más pequeño por ser más largo */
+        line-height: 1.3 !important;
+    }
+    
+    #section7 .text-base,
+    #section7 .text-lg {
+        font-size: 0.875rem !important; /* 14px */
+        line-height: 1.5 !important;
+    }
+    
+    /* Texto de la barra amarilla */
+    .bg-yellow-300 p {
+        font-size: 0.875rem !important; /* 14px */
+        line-height: 1.4 !important;
+        padding: 0.75rem 1rem !important;
+    }
+    
+    /* Ajustar márgenes generales en mobile */
+    section {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    /* Reducir gaps en grids */
+    .grid {
+        gap: 1.5rem !important;
+    }
+    
+    /* Ajustes específicos para la sección 1 en mobile */
+    #section1 .grid {
+        gap: 1.5rem !important;
+        grid-template-columns: 1fr !important; /* Una columna en mobile */
+    }
+    
+    #section1 .flex.flex-col {
+        width: 100% !important;
+    }
+    
+    /* Asegurar que los beneficios en sección 1 se vean bien en mobile */
+    #section1 .justify-center.items-center {
+        width: 100% !important;
+        margin-top: 1rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    #section1 .flex.flex-col.md\:flex-row {
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+        flex-direction: column !important; /* Columna en mobile */
+    }
+    
+    #section1 .max-w-md {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Texto de beneficios en sección 1 */
+    #section1 .text-base.md\:text-lg {
+        font-size: 0.875rem !important; /* 14px en mobile */
+        text-align: left !important;
+    }
+    
+    /* Título "Lo que tu club gana al unirse" */
+    #section1 .text-xl.md\:text-2xl {
+        font-size: 1rem !important; /* 16px en mobile */
+        margin-top: 1rem !important;
+        margin-bottom: 0.75rem !important;
     }
 }
 
@@ -172,14 +368,18 @@ body {
 }
 .qualifio_iframe_wrapper {
     width: 100%;
-    height: 100%;
-    min-height: 570px !important;
+    height: auto;
+    min-height: auto;
     padding: 10px;
     margin-bottom: 60px;
     border-radius: 22px;
     background: rgba(0, 0, 0, 0.60);
     box-shadow: 0 4px 18.1px 0 rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 .iframeQualifio span {
     font-style: normal;
@@ -189,29 +389,112 @@ body {
     color: #000;
 }
 
+.qualifio_iframe_wrapper {
+    min-height: auto !important;
+}
+
 .qualifio_iframe_wrapper iframe {
     width: 100% !important;
-    max-width: 810px;
+    max-width: 810px !important; /* Ancho fijo para el primer Qualifio */
     min-width: 280px;
-    height: 100% !important;
+    height: 600px; /* Altura inicial, será ajustada automáticamente por JavaScript */
     min-height: 400px;
+    max-height: 2000px; /* Altura máxima muy alta para permitir contenido largo */
     border: none;
     display: block;
     margin: 0 auto;
+    overflow: hidden; /* Sin scroll interno, la altura se ajustará al contenido */
+    transition: height 0.3s ease; /* Transición suave cuando cambia la altura */
 }
+
+/* Segundo Qualifio más ancho en escritorio - pero no tanto */
+/* Nota: min-width solo se aplicará en escritorio mediante media queries */
 .qualifio_iframe_wrapper:last-of-type iframe {
-        height: 60vh !important;
-    width: 30vw !important;
+    max-width: 1000px !important; /* Un poco más ancho que el primero */
+    width: 100% !important;
 }
-@media (max-width: 900px) {
-    .qualifio_iframe_wrapper iframe {
-        max-width: 100vw;
-        min-width: 0;
+/* Media queries para pantallas grandes - asegurar que no se corte */
+@media (min-width: 1550px) {
+    .qualifio_iframe_wrapper {
+        padding: 20px;
+        min-height: auto !important;
     }
-     .qualifio_iframe_wrapper:last-of-type iframe {
-    height: 95vh !important; 
-    width: 85vw !important;
+    
+    .qualifio_iframe_wrapper iframe {
+        max-width: 810px !important; /* Mantener ancho original del primer Qualifio */
+        height: 600px; /* Será ajustada automáticamente por JavaScript */
+        max-height: 2000px !important;
+    }
+    
+    .qualifio_iframe_wrapper:last-of-type iframe {
+        max-width: 1100px !important; /* Segundo Qualifio un poco más ancho */
+        width: 100% !important;
+        min-width: 600px !important;
+    }
 }
+
+/* Media queries para tablets y pantallas medianas */
+@media (min-width: 901px) and (max-width: 1549px) {
+    .qualifio_iframe_wrapper {
+        min-height: auto !important;
+    }
+    
+    .qualifio_iframe_wrapper iframe {
+        max-width: 810px !important; /* Mantener ancho original del primer Qualifio */
+        height: 600px; /* Será ajustada automáticamente por JavaScript */
+        max-height: 2000px !important;
+    }
+    
+    .qualifio_iframe_wrapper:last-of-type iframe {
+        max-width: 1000px !important; /* Segundo Qualifio un poco más ancho */
+        width: 100% !important;
+        min-width: 500px !important;
+    }
+}
+
+/* Media query específica para escritorio (desktop) */
+@media (min-width: 1024px) {
+    /* Asegurar que el primer Qualifio mantenga su ancho */
+    .qualifio_iframe_wrapper:not(:last-of-type) iframe {
+        max-width: 810px !important;
+        min-width: 280px !important;
+    }
+    
+    .qualifio_iframe_wrapper:last-of-type iframe {
+        max-width: 1000px !important; /* Segundo Qualifio un poco más ancho */
+        width: 100% !important;
+        min-width: 500px !important; /* Solo en escritorio */
+    }
+}
+
+/* Media queries para móviles */
+@media (max-width: 900px) {
+    .qualifio_iframe_wrapper {
+        padding: 10px;
+        min-height: auto !important;
+    }
+    
+    /* Primer Qualifio en mobile */
+    .qualifio_iframe_wrapper:not(:last-of-type) iframe {
+        max-width: 100% !important;
+        min-width: 280px !important;
+        width: 100% !important;
+        height: 800px; /* Altura mayor en mobile para mostrar el botón */
+        min-height: 800px !important;
+        max-height: 2000px !important;
+        overflow: hidden;
+    }
+    
+    /* Segundo Qualifio en mobile */
+    .qualifio_iframe_wrapper:last-of-type iframe {
+        max-width: 100% !important;
+        min-width: 280px !important; /* Mismo min-width que el primero en mobile */
+        width: 100% !important;
+        height: 800px; /* Altura mayor en mobile para mostrar el botón */
+        min-height: 800px !important;
+        max-height: 2000px !important;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 900px) {
@@ -227,10 +510,33 @@ body {
         line-height: 56px;
     }
 }
+/* Media queries para móviles pequeños */
 @media (max-width: 390px) {
+    .qualifio_iframe_wrapper {
+        padding: 5px;
+        min-height: auto !important;
+    }
+    
+    /* Primer Qualifio en móviles pequeños */
+    .qualifio_iframe_wrapper:not(:last-of-type) iframe {
+        max-width: 100% !important;
+        min-width: 280px !important;
+        width: 100% !important;
+        height: 750px;
+        min-height: 750px !important;
+        max-height: 2000px !important;
+        overflow: hidden;
+    }
+    
+    /* Segundo Qualifio en móviles pequeños */
     .qualifio_iframe_wrapper:last-of-type iframe {
-        height: 100vh !important;
-        width: 85vw !important;
+        max-width: 100% !important;
+        min-width: 280px !important;
+        width: 100% !important;
+        height: 750px;
+        min-height: 750px !important;
+        max-height: 2000px !important;
+        overflow: hidden;
     }
 }
 
@@ -257,11 +563,4 @@ body {
   .article-default a:hover {
     text-decoration: none;
     box-shadow: none;
-
   }
-
-
-
-
-
-
