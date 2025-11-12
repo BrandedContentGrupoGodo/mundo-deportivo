@@ -131,6 +131,12 @@ a:focus-visible {
     margin-top: 2.5rem;
 }
 
+@media (max-width: 650px) {
+    #section1 {
+        background-image: url('https://brandedcontentgrupogodo.github.io/mundo-deportivo/clubs-del-mundo/assets/img/fondo-mobile.jpg');
+    }
+}
+
 #section5 {
     margin-top: 0.5rem;
     background-image: url('https://brandedcontentgrupogodo.github.io/mundo-deportivo/clubs-del-mundo/assets/img/fondo-2.jpg');
